@@ -1,3 +1,50 @@
+
+h1 {
+    text-align: center;
+    background: linear-gradient(to right,#fce3ec,#ffe8cc);
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Sacramento', cursive;
+}
+
+h2 span{
+    /*background: linear-gradient(to right,#fce3ec,#ffe8cc);*/
+    background-color: black;
+    position: absolute;
+    margin-bottom: 0;
+}
+
 img.artObject {
-    height: 300px;
+    display: block;
+    width: 80vw;
+    margin: 0.5em auto;
+}
+
+@media(min-width: 800px){
+    img.artObject {
+        height:300px;
+        width:auto;
+        display: inline-block;
+    }
+    #gallery{
+        margin:0 auto;
+        max-width: 80vw;
+        align-items: center;
+    }
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
 }
