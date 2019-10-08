@@ -1,5 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+div.Description {
+  text-align:center;
+  padding-top:3rem;
+  background:linear-gradient(to right,#fce3ec,#ffe8cc);
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:2rem;
+  height:20vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.Description div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.Description div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+.Description div:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.Description div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
 footer {
     text-align: center;
+    font-family:'Roboto';
+}
+
+p {
+    font-family:'Roboto';
+}
+
+p#home {
+    border-top-left-radius:     3em 3em;
+    border-top-right-radius:    3em 5em;
 }
 
 #home {
@@ -10,17 +82,16 @@ footer {
     padding:0.25rem 1rem;
 }
 
-h3 {
+p#comment {
     background: linear-gradient(to right,#fce3ec,#ffe8cc);
     text-align: center;
+    font-family:'Roboto';
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 a {
     text-decoration: none;
-}
-
-h1 {
-    text-align: center;
 }
 
 img {
