@@ -1,0 +1,45 @@
+footer {
+    text-align: center;
+}
+
+#home {
+    color: black;
+    display: inline;
+    background: linear-gradient(to right,#fce3ec,#ffe8cc);
+    text-decoration: none;
+    padding:0.25rem 1rem;
+}
+
+h3 {
+    background: linear-gradient(to right,#fce3ec,#ffe8cc);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0.25rem auto;
+}
+
+div#comment{
+  border: #fce3ec 
+  0.25rem dotted;
+  border-radius: 1rem;
+}
+
+.formDiv {
+    text-align: center;
+}
+
+
+button {
+    display: block;
+    margin: 0 auto;
+}
