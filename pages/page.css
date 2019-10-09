@@ -2,12 +2,12 @@
 
 div.Description {
   text-align:center;
-  padding-top:3rem;
+  padding-top:1.5rem;
   background:linear-gradient(to right,#fce3ec,#ffe8cc);
   font-family:'Roboto';
   font-weight:300;
-  font-size:2rem;
-  height:20vh;
+  font-size:1.5rem;
+  height:10vh;
   overflow:hidden;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -59,6 +59,11 @@ div.Description {
     100% {opacity:0;width:355px;}
 }
 
+img {
+    width: 80vw;
+    height: auto;
+}
+
 
 footer {
     text-align: center;
@@ -87,7 +92,7 @@ p#comment {
     text-align: center;
     font-family:'Roboto';
     padding: 0.5rem 0 0.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 a {
@@ -97,6 +102,13 @@ a {
 img {
     display: block;
     margin: 0.25rem auto;
+}
+
+@media (min-width: 500px){
+    img {
+        height:300px;
+        width:auto;
+    }
 }
 
 div#comment{
