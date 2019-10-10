@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+img {
+    width: 80vw;
+    height: auto;
+}
+
+@media (min-width: 500px){
+    img {
+        height:300px;
+        width:auto;
+    }
+}
+
+footer {
+    text-align: center;
+    font-family:'Roboto';
+}
+
+p {
+    font-family:'Roboto';
+}
+
+p#home {
+    border-top-left-radius:     3em 3em;
+    border-top-right-radius:    3em 5em;
+}
+
+#home {
+    color: black;
+    display: inline;
+    background: linear-gradient(to right,#fce3ec,#ffe8cc);
+    text-decoration: none;
+    padding:0.25rem 1rem;
+}
+
+p#comment {
+    background: linear-gradient(to right,#fce3ec,#ffe8cc);
+    text-align: center;
+    font-family:'Roboto';
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 0.25rem auto;
+}
+
+
+
+div#comment{
+  border: #fce3ec 
+  0.25rem dotted;
+  border-radius: 1rem;
+}
+
+.formDiv {
+    text-align: center;
+}
+
+
+button {
+    display: block;
+    margin: 0 auto;
+}

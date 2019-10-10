@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paul Gauguin</title>
-    <link rel="stylesheet" href="./page.css">
+   <!--- <link rel="stylesheet" href="./page.css">--->
+    <link rel="stylesheet" href="./page_details.css">
+    <script src="./page_details.js"></script>
 </head>
 <body>
     <a href="../index.html"><p id="home"> weichi's museum app </p></a>
     
-    <div class="Description">
+    <div class="description">
         <div>Still Life </div>
         <div>
             <span>by Paul Gauguin</span>
         </div>
     </div>
 
-    <img src="https://images.metmuseum.org/CRDImages/ep/original/DT1501.jpg" alt="Still Life by Paul Gauguin" height="400">
-    <div id=comment>
-        <p id=comment>Comments</p>
-        <form action="">
+    <img src="https://images.metmuseum.org/CRDImages/ep/original/DT1501.jpg" alt="Still Life by Paul Gauguin">
+    <div>
+        <p>Comments</p>
+
+        <div class="usersComments">
+             <div>
+                 <h4>Mimi says</h4>
+                 <p>Wonderful!</p>
+             </div>
+        </div>
+
+
+        <form onsubmit="submitComment(); return false">
             <div class="formDiv">
-                <label for="Name">Your Name</label></br>
+                <label for="name">Your Name</label></br>
                 <input type="text" name="" id="name">
             </div>
             <div class="formDiv">
-                    <label for="Comment">Leave Comment</label></br>
-                    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                    <label for="msg">Leave Comment</label></br>
+                    <textarea name="" id="msg" cols="30" rows="10"></textarea>
             </div>
             <div class="btn">
                 <button>Post Your Comment</button>
