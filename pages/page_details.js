@@ -45,7 +45,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const comment = document.createElement('div');
         const h4 = document.createElement('h4');
         const p = document.createElement('p');
+        const status = document.createElement('div');
+        status.classList.add('status');
+
+        const star = document.createElement('i');
+        star.classList.add('fa-star');
+        star.classList.add('far');
+        star.addEventListener('click',function(event){
+            console.log(star)
+            /* if (star.classList.contains('far')){
+                star.classList.remove('far');
+                star.classList.add('fas');
+            } */
+
+            star.classList.toggle('far');
+            star.classList.toggle('fas');
+        })
+         
+
+
+
         const hideBtn = document.createElement('button');
+        //Does this id matters? 
         hideBtn.id = 'hide'
         hideBtn.innerText ='X'
 
@@ -65,7 +86,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         h4.innerText = `${name} says:`;
         p.innerText = msg;
         comment.classList.add('comment');
-        comment.appendChild(hideBtn);
+        comment.appendChild(status);
+        status.appendChild(hideBtn);
+        status.appendChild(star);
         comment.appendChild(h4);
         comment.appendChild(p);
         
@@ -113,6 +136,9 @@ hideBtn.addEventListener('click',function(event){
 
 
 //Pinned comment
+
+
+
 
 //Show comment count on html.index
 
