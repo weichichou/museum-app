@@ -7,31 +7,33 @@
     <title>Paul Gauguin</title>
    <!--- <link rel="stylesheet" href="./page.css">--->
     <link rel="stylesheet" href="./page_details.css">
-    <script src="./page_details.js"></script>
+    
 </head>
 <body>
     <a href="../index.html"><p id="home"> weichi's museum app </p></a>
     
     <div class="description">
-        <div>Still Life </div>
-        <div>
-            <span>by Paul Gauguin</span>
-        </div>
+        <h2><span >Still Life by Paul Gauguin</span></h2>
+      
     </div>
 
     <img src="https://images.metmuseum.org/CRDImages/ep/original/DT1501.jpg" alt="Still Life by Paul Gauguin">
     <div>
-        <p>Comments</p>
+        <p>
+        <span id="commentTitle" class="textBgc">Comments</span>
+        </p>
 
-        <div class="usersComments">
-             <div>
+        <div id="commentContainer">
+             <div class="comment">
                  <h4>Mimi says</h4>
                  <p>Wonderful!</p>
              </div>
         </div>
 
 
-        <form onsubmit="submitComment(); return false">
+        <!--  <form id="form" onsubmit="submitComment(); return false">-->
+        <form id="form--userInput">
+
             <div class="formDiv">
                 <label for="name">Your Name</label></br>
                 <input type="text" name="" id="name">
@@ -49,5 +51,7 @@
     <footer>
             <p>Made with ❤ at Codaisseur</p>
     </footer>
+
+    <script src="./page_details.js"></script>
 </body>
 </html>
