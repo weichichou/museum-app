@@ -37,6 +37,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const msg = textArea.value;
         if (!name || !msg){   
             //console.log(msg)
+            window.alert('Please input name and message')
             return;
         }else{
     
@@ -115,4 +116,3 @@ hideBtn.addEventListener('click',function(event){
 
 //Show comment count on html.index
 
-//prevent empty input
