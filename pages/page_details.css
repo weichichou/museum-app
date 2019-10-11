@@ -109,3 +109,7 @@ form {
     margin-top: 1rem;
 
 }
+
+Button#hide {
+    margin-right:0;
+}
